@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.2 on win32)" generated="20220301 15:54:20.094" rpa="true">
+<suite id="s1" name="Login Acceptence Automated Test" source="C:\Users\mamad\git\repository\Login Acceptence Automated Test">
+<suite id="s1-s1" name="Test" source="C:\Users\mamad\git\repository\Login Acceptence Automated Test\Test">
+<suite id="s1-s1-s1" name="TestSuit1" source="C:\Users\mamad\git\repository\Login Acceptence Automated Test\Test\TestSuit1.robot">
+<test id="s1-s1-s1-t1" name="LoginTesting">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220301 15:54:20.579" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220301 15:54:20.577" endtime="20220301 15:54:25.102"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20220301 15:54:25.103" endtime="20220301 15:54:25.109"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20220301 15:54:25.110" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220301 15:54:25.110" endtime="20220301 15:54:25.230"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20220301 15:54:25.231" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20220301 15:54:25.293" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220301 15:54:25.360" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220301 15:54:25.231" endtime="20220301 15:54:25.360"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20220301 15:54:25.361" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20220301 15:54:25.361" endtime="20220301 15:54:29.008"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20220301 15:54:29.010" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20220301 15:54:29.009" endtime="20220301 15:54:29.080"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20220301 15:54:29.081" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20220301 15:54:29.080" endtime="20220301 15:54:29.937"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20220301 15:54:34.943" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220301 15:54:29.938" endtime="20220301 15:54:34.943"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220301 15:54:34.944" endtime="20220301 15:54:37.144"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test is Completed!</arg>
+</arguments>
+<msg timestamp="20220301 15:54:37.148" level="INFO">Test is Completed!</msg>
+<status status="PASS" starttime="20220301 15:54:37.146" endtime="20220301 15:54:37.148"></status>
+</kw>
+<doc>This is the Login Automation Sample Test
+</doc>
+<status status="PASS" starttime="20220301 15:54:20.576" endtime="20220301 15:54:37.149" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20220301 15:54:20.225" endtime="20220301 15:54:37.153"></status>
+</suite>
+<status status="PASS" starttime="20220301 15:54:20.221" endtime="20220301 15:54:37.158"></status>
+</suite>
+<status status="PASS" starttime="20220301 15:54:20.190" endtime="20220301 15:54:37.160"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tasks</stat>
+<stat pass="1" fail="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Login Acceptence Automated Test">Login Acceptence Automated Test</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">Login Acceptence Automated Test.Test</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="TestSuit1">Login Acceptence Automated Test.Test.TestSuit1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
